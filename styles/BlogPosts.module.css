@@ -1,3 +1,8 @@
+.heading {
+  margin-bottom: 1.2rem;
+  margin-top: 2rem;
+}
+
 .list {
   margin: 0;
   padding: 0;
@@ -16,8 +21,13 @@
   font-size: 0.75rem;
 }
 .tags a:after {
-  content: " . ";
+  content: "  -  ";
 }
 .tags a:last-child:after {
   content: "";
+}
+
+.date {
+  font-size: 0.75rem;
+  color: rgb(107, 107, 107);
 }

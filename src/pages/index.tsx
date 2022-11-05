@@ -16,7 +16,6 @@ export default function Home({ posts }: { posts: PostMeta[] }) {
         </Head>
         <Navbar />
         <div className="container">
-          <h1>All Blog Posts</h1>
           <BlogPosts posts={posts} />
         </div>
       </div>

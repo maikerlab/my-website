@@ -1,0 +1,56 @@
+---
+title: Hello World!
+status: published
+tags:
+  - test
+date: 2022-11-05
+excerpt: This is a blog-post for testing functionalities of MDX
+---
+
+## Code Snippets
+
+### Python
+
+```python
+def hello_world(message):
+  print("Hello World: " + message)
+```
+
+### JavaScript (React)
+
+```javascript
+export default function PostPage({ post }: { post: MDXPost }) {
+  return (
+    <>
+      <Head>
+        <title>{post.meta.title}</title>
+      </Head>
+      <div className="post-page">
+        <h1 className="post-title">{post.meta.title}</h1>
+        <MDXRemote {...post.source} components={{ YouTube, Image }} />
+      </div>
+    </>
+  );
+}
+
+export const sayHello: string = async ({ params }) => {
+  const { slug } = params as { slug: string };
+
+  return slug;
+};
+```
+
+### Shell
+
+```shell
+make check
+make all -j8
+```
+
+## Images
+
+<img src="/images/reduce.jpg" style={{ width: "70%" }} />
+
+## YouTube
+
+<YouTube id="J_0SBJMxmcw" />

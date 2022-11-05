@@ -3,6 +3,7 @@ import React from "react";
 import BlogPosts from "@src/components/blogposts";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { getAllPosts, PostMeta } from "@src/api";
+import Navbar from "@src/components/navbar";
 
 export default function TagPage({
   slug,
@@ -16,6 +17,7 @@ export default function TagPage({
       <Head>
         <title>Tag: {slug}</title>
       </Head>
+      <Navbar />
       <div className="container">
         <h1>Tag: {slug}</h1>
         <BlogPosts posts={posts} />
