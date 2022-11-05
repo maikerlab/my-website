@@ -17,6 +17,17 @@
   font-size: 1.25rem;
 }
 
+.meta {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.metaitem {
+  display: flex;
+  gap: 0.3rem;
+}
+
 .tags {
   font-size: 0.75rem;
 }

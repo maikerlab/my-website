@@ -25,3 +25,13 @@
   font-size: 1.2rem;
   font-weight: 500;
 }
+
+.social {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.social svg {
+  width: 24px;
+  height: 24px;
+}
