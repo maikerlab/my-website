@@ -23,8 +23,8 @@ export const getAllPosts = () => {
       if (a.meta.date > b.meta.date) return 1;
       if (a.meta.date < b.meta.date) return -1;
       return 0;
-    });
-  //.reverse();
+    })
+    .reverse();
   return posts;
 };
 
