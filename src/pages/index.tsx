@@ -4,21 +4,16 @@ import styles from "../../styles/Home.module.css";
 import { getAllPosts } from "@src/api";
 import { PostMeta } from "@src/api";
 import BlogPosts from "@src/components/blogposts";
-import Navbar from "@src/components/navbar";
+import Header from "@src/components/header";
 
 export default function Home({ posts }: { posts: PostMeta[] }) {
   return (
     <>
-      <div className={styles.container}>
-        <Head>
-          <title>Maik's Blog</title>
-          <meta name="description" content="Blog of Maik (malorama)" />
-        </Head>
-        <Navbar />
-        <div className="container">
-          <BlogPosts posts={posts} />
-        </div>
-      </div>
+      <Head>
+        <title>Maik's Blog</title>
+        <meta name="description" content="Blog of Maik (malorama)" />
+      </Head>
+      <BlogPosts posts={posts} />
     </>
   );
 }

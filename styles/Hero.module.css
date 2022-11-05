@@ -1,0 +1,26 @@
+.hero {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.textbox {
+  width: 100%;
+}
+
+.description {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  text-align: center;
+}
+
+.image img {
+  width: 50%;
+  border-radius: 20px;
+}
