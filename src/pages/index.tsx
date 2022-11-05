@@ -4,6 +4,7 @@ import styles from "../../styles/Home.module.css";
 import { getAllPosts } from "@src/api";
 import { PostMeta } from "@src/api";
 import BlogPosts from "@src/components/blogposts";
+import Navbar from "@src/components/navbar";
 
 export default function Home({ posts }: { posts: PostMeta[] }) {
   return (
@@ -13,6 +14,7 @@ export default function Home({ posts }: { posts: PostMeta[] }) {
           <title>Maik's Blog</title>
           <meta name="description" content="Blog of Maik (malorama)" />
         </Head>
+        <Navbar />
         <div className="container">
           <h1>All Blog Posts</h1>
           <BlogPosts posts={posts} />

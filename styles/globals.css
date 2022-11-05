@@ -11,7 +11,7 @@
 
 html,
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.6;
   font-weight: 300;
 }
@@ -19,6 +19,11 @@ body {
 a {
   color: #ecb365;
   text-decoration: none;
+}
+
+a:hover {
+  color: #be6f00;
+  transition: all 0.2s;
 }
 
 * {
@@ -43,8 +48,4 @@ a {
 
 .post-page img {
   width: 100%;
-}
-
-nav {
-  padding-bottom: 2rem;
 }
