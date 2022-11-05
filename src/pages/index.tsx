@@ -10,7 +10,7 @@ export default function Home({ posts }: { posts: PostMeta[] }) {
   return (
     <>
       <Head>
-        <title>Maik's Blog</title>
+        <title>Maik&apos;s Blog</title>
         <meta name="description" content="Blog of Maik (malorama)" />
       </Head>
       <BlogPosts posts={posts} />

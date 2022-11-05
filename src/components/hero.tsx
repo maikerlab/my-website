@@ -18,7 +18,12 @@ export default function Hero() {
           </p>
         </div>
         <div className={styles.image}>
-          <img src="/images/maik.jpg" alt="Photo of Hero" />
+          <Image
+            src="/images/maik.jpg"
+            width={404}
+            height={378}
+            alt="Image of Maik"
+          />
         </div>
       </div>
     </section>
